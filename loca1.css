@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: "Merriweather", Verdana, Helvetica sans-serif;
+  background-color: #40514e;
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+  color: #66bfbf;
+}
+
+#playGround {
+  /* 19*30px x 16*30px */
+  height: 480px;
+  width: 570px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.box {
+  height: 30px;
+  width: 30px;
+  float: left;
+}
+.E {
+  /* E = Empty void*/
+  background-color: rgb(36, 36, 36);
+  /*background-image: url("./images/Gr3.png");*/
+}
+.W {
+  /*W = Wall */
+  background-image: url("./images/Wa3.png");
+}
+.N {
+  /* N = standard floor nr.1 */
+  background-color: rgb(98, 98, 98);
+  background-image: url("./images/Gr3.png");
+}
+.M {
+  /* M = standard floor nr.2 */
+  background-image: url("./images/Gr2.png");
+}
+.G {
+  /* G = Goal area for the blocks */
+  background-image: url("./images/Fi1.png");
+}
+.B {
+  /* B = Movable block */
+  background-image: url("./images/Kr1.png");
+}
+.B.G {
+  /* B = Movable block over goal area */
+  background-image: url("./images/Kr2.png");
+}
+.G.P {
+  /* Background and image for player */
+  background-image: url("./images/Man4.png"), url("./images/Fi1.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+.N.P {
+  /* Background and image for player over ground */
+  background-image: url("./images/Man4.png"), url("./images/Gr3.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+.M.P {
+  /* Background and image for player over ground */
+  background-image: url("./images/Man4.png"), url("./images/Gr2.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
